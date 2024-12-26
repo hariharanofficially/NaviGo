@@ -1,0 +1,184 @@
+name: EquineApp
+description: App to manage Equine activity
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.3 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  animate_do: ^3.3.4
+  background_location: ^0.13.0
+  country_flags: ^3.0.0
+  cron: ^0.6.1
+  device_info_plus: ^9.1.2
+  dio: ^5.4.3+1
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_blue_plus: ^1.32.8
+  flutter_dotenv: ^5.1.0
+  flutter_facebook_auth: ^7.0.1
+  flutter_map: ^6.1.0
+  flutter_spinkit: ^5.2.1
+  flutter_timezone: ^1.0.8
+  geolocator: ^11.1.0
+  get_it: ^7.6.7
+  go_router: ^14.2.0
+  google_fonts: ^5.0.0
+  google_sign_in: ^6.2.1
+  iconify_flutter: ^0.0.5
+  intl: ^0.19.0
+  latlong2: ^0.9.1
+  logger: ^2.3.0
+  lottie: ^3.1.2
+  polar: ^7.1.0
+  qr_code_scanner: ^1.0.1
+  razorpay_flutter: ^1.3.7
+  shared_preferences: ^2.2.3
+  simple_ripple_animation: ^0.0.9
+  sqflite: ^2.3.2
+  stomp_dart_client: ^1.0.0
+  talker_bloc_logger: ^4.3.2
+  talker_dio_logger: ^4.3.2
+  timelines: ^0.1.0
+  url_launcher: ^6.3.0
+  table_calendar: ^3.1.2
+  fl_chart: ^0.69.0
+  image_picker: ^1.0.8
+  flutter_translate: ^4.1.0
+  numberpicker: ^2.1.2
+  file_picker: ^8.0.0+1
+  weekly_date_picker: ^1.4.2
+  flutter_share: ^2.0.0
+  share_plus: ^7.2.2
+  qr_flutter: ^4.1.0
+  open_file: ^3.3.2
+  flutter_local_notifications: ^18.0.1
+  external_path: ^2.0.1
+  dropdown_search: ^5.0.2
+  flutter_searchable_dropdown: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^9.1.4
+  mockito: ^5.4.4
+
+  flutter_lints: ^4.0.0
+
+flutter:    
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/plans/
+    - assets/config/.env.dev
+    - assets/config/.env.prod
+    - assets/images/horse.png
+    - assets/images/tracker_horse.png
+    - assets/images/maplocating.png
+    - assets/images/logo.png
+    - assets/images/logo1.png
+    - assets/images/bluetooth.png
+    - assets/images/bottombar_bluetooth.png
+    - assets/images/bottombar_home.png
+    - assets/images/bottombar_pair.png
+    - assets/images/dash_dash.png
+    - assets/images/dash_tracker.png
+    - assets/images/Dashboard.png
+    - assets/images/heartbeat.png
+    - assets/images/distance.png
+    - assets/images/heartbeat_green.jpg
+    - assets/images/speed_gauge.jpg
+    - assets/images/location.png
+    - assets/images/map.png
+    - assets/images/signup_facebook.png
+    - assets/images/signup_gmail.png
+    - assets/images/signup_mail.png
+    - assets/images/slide_instruct.png
+    - assets/images/slide_logout.png
+    - assets/images/slide_profile.png
+    - assets/images/slide_settings.png
+    - assets/images/slide_support.png
+    - assets/images/slide_update.png
+    - assets/images/slide_version.png
+    - assets/images/speedduration.png
+    - assets/images/tracker_content.png
+    - assets/images/tracker_dash.png
+    - assets/images/tracker_head.png
+    - assets/images/tracker_tracker.png
+    - assets/images/tracker.png
+#    - assets/images/tracking.png
+#    - assets/images/trackinglocation1.png
+    - assets/images/trackinglocation2.png
+#    - assets/images/trackinglocation3.png
+#    - assets/images/trackinglocation4.png
+    - assets/images/trackerapp.gif
+    - assets/images/Rectangle.png
+    - assets/images/map/anholt_osmbright/12/2177/
+    - assets/images/map/anholt_osmbright/12/2178/
+    - assets/images/map/anholt_osmbright/12/2179/
+    - assets/images/map/anholt_osmbright/12/2180/
+    - assets/images/map/anholt_osmbright/12/2181/
+    - assets/images/map/anholt_osmbright/13/4354/
+    - assets/images/map/anholt_osmbright/13/4355/
+    - assets/images/map/anholt_osmbright/13/4356/
+    - assets/images/map/anholt_osmbright/13/4357/
+    - assets/images/map/anholt_osmbright/13/4358/
+    - assets/images/map/anholt_osmbright/13/4359/
+    - assets/images/map/anholt_osmbright/13/4360/
+    - assets/images/map/anholt_osmbright/13/4361/
+    - assets/images/map/anholt_osmbright/13/4362/
+    - assets/images/map/anholt_osmbright/13/4363/
+    - assets/images/map/anholt_osmbright/14/8709/
+    - assets/images/map/anholt_osmbright/14/8710/
+    - assets/images/map/anholt_osmbright/14/8711/
+    - assets/images/map/anholt_osmbright/14/8712/
+    - assets/images/map/anholt_osmbright/14/8713/
+    - assets/images/map/anholt_osmbright/14/8714/
+    - assets/images/map/anholt_osmbright/14/8715/
+    - assets/images/map/anholt_osmbright/14/8716/
+    - assets/images/map/anholt_osmbright/14/8717/
+    - assets/images/map/anholt_osmbright/14/8718/
+    - assets/images/map/anholt_osmbright/14/8719/
+    - assets/images/map/anholt_osmbright/14/8720/
+    - assets/images/map/anholt_osmbright/14/8721/
+    - assets/images/map/anholt_osmbright/14/8722/
+    - assets/images/map/anholt_osmbright/14/8723/
+    - assets/images/map/anholt_osmbright/14/8724/
+    - assets/images/map/anholt_osmbright/14/8725/
+    - assets/images/map/anholt_osmbright/14/8726/
+    - assets/images/map/anholt_osmbright/14/8727/
+    - assets/images/map/epsg3413/amsr2.png
+    - assets/images/mapbox-logo-white.png
+    - assets/images/ProjectIcon.png
+    - assets/tracker.json
+    - assets/images/tracker.svg
+    - assets/images/trackerlogo.svg
+    - assets/images/track.png
+    - assets/images/dash.png
+    - assets/images/track2.png
+    - assets/images/track3.png
+    - assets/images/dash2.png
+    - assets/images/bottombar1.png
+    - assets/images/bottombar2.png
+    - assets/images/bottombar3.png
+    - assets/images/bluetooth3.png
+    - assets/images/tracker.gif
+    - assets/images/tracker.json
+    - assets/images/english_flag.png
+    - assets/images/arabic_flag.png
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/icon.png"
+#flutter pub run flutter_launcher_icons run this command to generate the launcher Icons  
+fonts:
+     - family: Karla
+       fonts:
+         - asset: fonts/Karla-Regular.ttf

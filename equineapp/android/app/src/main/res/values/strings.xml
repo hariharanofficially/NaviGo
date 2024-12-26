@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">equineapp_new</string>
+    <string name="facebook_app_id">359590563427349</string>
+<string name="fb_login_protocol_scheme">fb359590563427349</string>
+<string name="facebook_client_token">27db8c11ee1cb5c657a74631a7abd4c4</string>
+</resources>

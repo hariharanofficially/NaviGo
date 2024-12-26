@@ -1,0 +1,1 @@
+ D:\\hari\\equineapp\\.dart_tool\\flutter_build\\fc818fcba6705aeb08d86cd52ca639f1\\native_assets.yaml: 

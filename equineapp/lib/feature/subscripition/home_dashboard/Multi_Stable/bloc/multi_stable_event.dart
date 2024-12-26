@@ -1,0 +1,5 @@
+
+enum MultiStableDashboardEvent {
+  loadInitialData,
+  navigateToTrackDevice,
+}

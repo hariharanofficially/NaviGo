@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.my_app">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+
+    <!-- Polar SDK needs Bluetooth scan permission to search for BLE devices. Polar BLE SDK doesn't use the scan
+    to decide the location so "neverForLocation" permission flag can be used.-->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+
+    <!-- Polar SDK needs Bluetooth connect permission to connect for found BLE devices.-->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <!-- Allows Polar SDK to connect to paired bluetooth devices. Legacy Bluetooth permission,
+     which is needed on devices with API 30 (Android Q) or older. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <!-- Allows Polar SDK to discover and pair bluetooth devices. Legacy Bluetooth permission,
+     which is needed on devices with API 30 (Android Q) or older. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+
+    <!-- Polar SDK needs the fine location permission to get results for Bluetooth scan. Request
+    fine location permission on devices with API 30 (Android Q). Note, if your application
+    needs location for other purposes than bluetooth then remove android:maxSdkVersion="30"-->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- The coarse location permission is needed, if fine location permission is requested. Request
+      coarse location permission on devices with API 30 (Android Q). Note, if your application
+     needs location for other purposes than bluetooth then remove android:maxSdkVersion="30" -->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+</manifest>
